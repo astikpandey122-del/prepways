@@ -4,7 +4,7 @@
  * Bump VERSION to drop old caches after a deploy that changes caching rules. */
 const VERSION = 'v2';
 const CACHE = `prepways-${VERSION}`;
-const PAGES = ['/', '/index.html', '/jee.html', '/neet.html', '/school.html', '/terms.html', '/privacy.html'];
+const PAGES = ['/', '/index.html', '/jee.html', '/neet.html', '/school.html', '/sitemap.html', '/terms.html', '/privacy.html'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(

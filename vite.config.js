@@ -12,6 +12,7 @@ export default defineConfig({
         jee: resolve(import.meta.dirname, 'jee.html'),
         neet: resolve(import.meta.dirname, 'neet.html'),
         school: resolve(import.meta.dirname, 'school.html'),
+        sitemap: resolve(import.meta.dirname, 'sitemap.html'),
         terms: resolve(import.meta.dirname, 'terms.html'),
         privacy: resolve(import.meta.dirname, 'privacy.html'),
         admin: resolve(import.meta.dirname, 'admin.html'),
