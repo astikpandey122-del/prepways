@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Rank predictor admin — PrepWays</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        var t;
+        try { t = localStorage.getItem('prepways-theme'); } catch (e) {}
+        if (!t) t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.dataset.theme = t;
+      })();
+    </script>
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <script type="module" src="/src/js/admin.js"></script>
+  </head>
+  <body class="page-admin">
+    <main class="container admin" id="main">
+      <header class="admin__head">
+        <a class="brand" href="index.html" aria-label="PrepWays home">
+          <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="pw-logo-1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6" /><stop offset=".55" stop-color="#5b6cf2" /><stop offset="1" stop-color="#14c3b0" /></linearGradient></defs><rect width="64" height="64" rx="14" fill="url(#pw-logo-1)" /><path class="logo__star" d="M32 7.5c1.1 5.6 2.9 7.4 8.5 8.5-5.6 1.1-7.4 2.9-8.5 8.5-1.1-5.6-2.9-7.4-8.5-8.5 5.6-1.1 7.4-2.9 8.5-8.5Z" fill="#fcd34d" /><path d="M30.8 28.2C25.6 25.6 19.4 25 13 26v23.2c6.4-1 12.6-.4 17.8 2.2Z" fill="#fff" /><path d="M33.2 28.2c5.2-2.6 11.4-3.2 17.8-2.2v23.2c-6.4-1-12.6-.4-17.8 2.2Z" fill="#eef2ff" /></svg></span>
+          <span>Prep<b>Ways</b></span>
+        </a>
+        <span class="badge">Admin</span>
+      </header>
+
+      <h1 class="section__title">Rank predictor <span class="gradient-text">data</span></h1>
+      <p class="section__lead">
+        Set the marks-vs-rank table used by the NEET rank predictor on the home page. Add a row for each marks value you have a
+        rank for; scores in between are calculated automatically.
+      </p>
+
+      <div class="admin__how">
+        <h2>How to publish</h2>
+        <ol>
+          <li>Edit the table below and check the test box gives sensible ranks.</li>
+          <li>Click <b>Preview on this device</b> to see it in the real predictor on this browser only.</li>
+          <li>Click <b>Download JSON</b> and replace <code>public/data/rank-predictor.json</code> in the project with the downloaded file.</li>
+          <li>Rebuild and deploy the site. Every visitor now gets the new ranks.</li>
+        </ol>
+      </div>
+
+      <p class="admin__status" data-status role="status"></p>
+
+      <div class="admin__grid">
+        <form class="form-card" data-settings novalidate>
+          <h2>Exam settings</h2>
+          <div class="form-grid">
+            <div class="field">
+              <label for="a-exam">Exam</label>
+              <select id="a-exam" name="exam"><option value="neet">NEET UG</option></select>
+            </div>
+            <div class="field">
+              <label for="a-session">Name shown to students</label>
+              <input id="a-session" name="session" type="text" placeholder="NEET UG 2027" />
+            </div>
+            <div class="field">
+              <label for="a-min">Minimum marks</label>
+              <input id="a-min" name="minMarks" type="number" step="1" />
+            </div>
+            <div class="field">
+              <label for="a-max">Maximum marks</label>
+              <input id="a-max" name="maxMarks" type="number" step="1" />
+            </div>
+            <div class="field">
+              <label for="a-range">Rank range shown (±%)</label>
+              <input id="a-range" name="rangePercent" type="number" min="0" max="50" step="0.5" />
+            </div>
+            <div class="field">
+              <label for="a-updated">Data updated on</label>
+              <input id="a-updated" name="updated" type="date" />
+            </div>
+          </div>
+
+          <div class="admin__test">
+            <label for="a-test">Test a score</label>
+            <div class="admin__test-row">
+              <input id="a-test" type="number" step="1" placeholder="e.g. 575" />
+              <output for="a-test" data-test-out>Enter marks to see the predicted rank</output>
+            </div>
+          </div>
+        </form>
+
+        <div class="form-card">
+          <div class="admin__table-head">
+            <h2>Marks → rank table</h2>
+            <button class="btn btn--sm" type="button" data-add>+ Add row</button>
+          </div>
+          <div class="admin__table-wrap">
+            <table class="admin__table">
+              <thead>
+                <tr><th scope="col">Marks</th><th scope="col">All-India Rank</th><th scope="col"><span class="sr-only">Remove</span></th></tr>
+              </thead>
+              <tbody data-rows></tbody>
+            </table>
+          </div>
+          <ul class="admin__errors" data-errors role="alert"></ul>
+        </div>
+      </div>
+
+      <div class="admin__actions">
+        <button class="btn btn--primary" type="button" data-download>Download JSON</button>
+        <button class="btn" type="button" data-preview>Preview on this device</button>
+        <button class="btn" type="button" data-clear-preview>Clear preview</button>
+        <label class="btn admin__import">Import JSON<input type="file" accept="application/json,.json" data-import /></label>
+        <button class="btn" type="button" data-reset>Reload published data</button>
+      </div>
+    </main>
+  </body>
+</html>

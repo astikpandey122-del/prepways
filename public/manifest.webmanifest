@@ -1,0 +1,24 @@
+{
+  "id": "/",
+  "name": "PrepWays — JEE & NEET Counselling",
+  "short_name": "PrepWays",
+  "description": "JEE & NEET counselling and guidance from IIT alumni and MBBS students, plus a free NEET rank predictor.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#070816",
+  "theme_color": "#070816",
+  "lang": "en-IN",
+  "categories": ["education"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "NEET rank predictor", "url": "/index.html#rank-predictor", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "IIT-JEE guidance", "url": "/jee.html", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "MBBS-NEET guidance", "url": "/neet.html", "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "updated": "2026-10-26",
+  "note": "SAMPLE DATA - replace with PrepWays' own marks-vs-rank table using admin.html before going live.",
+  "exams": {
+    "neet": {
+      "label": "NEET UG",
+      "session": "NEET UG 2027",
+      "minMarks": 0,
+      "maxMarks": 720,
+      "rangePercent": 8,
+      "points": [
+        [720, 1],
+        [700, 2200],
+        [680, 7000],
+        [650, 20000],
+        [620, 38000],
+        [600, 55000],
+        [550, 100000],
+        [500, 155000],
+        [450, 220000],
+        [400, 295000],
+        [350, 390000],
+        [300, 500000],
+        [250, 640000],
+        [200, 820000],
+        [150, 1080000],
+        [100, 1450000],
+        [50, 1850000],
+        [0, 2300000]
+      ]
+    }
+  }
+}

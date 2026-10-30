@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — PrepWays</title>
+    <meta
+      name="description"
+      content="How PrepWays collects, uses and protects your personal data, and the rights you have."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://prepways.in/privacy.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="PrepWays" />
+    <meta property="og:title" content="Privacy Policy — PrepWays" />
+    <meta property="og:url" content="https://prepways.in/privacy.html" />
+    <meta property="og:image" content="https://prepways.in/icons/icon-512.png" />
+    <meta name="theme-color" content="#070816" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="PrepWays" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        var t;
+        try { t = localStorage.getItem('prepways-theme'); } catch (e) {}
+        if (!t) t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.dataset.theme = t;
+        // Arriving from another PrepWays page (or back/forward): skip the loader
+        try {
+          var n = sessionStorage.getItem('prepways-nav');
+          var e = performance.getEntriesByType('navigation')[0];
+          if (n || (e && e.type === 'back_forward')) document.documentElement.classList.add('is-nav');
+          sessionStorage.removeItem('prepways-nav');
+        } catch (err) {}
+      })();
+    </script>
+    <!-- Render-blocking stylesheet so pages never paint unstyled -->
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <script type="module" src="/src/js/main.js"></script>
+  </head>
+  <body class="page-legal">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="loader" aria-hidden="true">
+      <div class="loader__inner">
+        <svg class="loader__logo" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="pw-logo-loader" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6" /><stop offset=".55" stop-color="#5b6cf2" /><stop offset="1" stop-color="#14c3b0" /></linearGradient></defs><rect width="64" height="64" rx="14" fill="url(#pw-logo-loader)" /><path class="logo__star" d="M32 7.5c1.1 5.6 2.9 7.4 8.5 8.5-5.6 1.1-7.4 2.9-8.5 8.5-1.1-5.6-2.9-7.4-8.5-8.5 5.6-1.1 7.4-2.9 8.5-8.5Z" fill="#fcd34d" /><path d="M30.8 28.2C25.6 25.6 19.4 25 13 26v23.2c6.4-1 12.6-.4 17.8 2.2Z" fill="#fff" /><path d="M33.2 28.2c5.2-2.6 11.4-3.2 17.8-2.2v23.2c-6.4-1-12.6-.4-17.8 2.2Z" fill="#eef2ff" /></svg>
+        <span>Prep<span class="gradient-text">Ways</span></span>
+      </div>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="bg-fx" aria-hidden="true">
+      <div class="orb orb--1"></div>
+      <div class="orb orb--2"></div>
+      <div class="orb orb--3"></div>
+    </div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="nav">
+      <a class="brand" href="index.html" aria-label="PrepWays home">
+        <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="pw-logo-1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6" /><stop offset=".55" stop-color="#5b6cf2" /><stop offset="1" stop-color="#14c3b0" /></linearGradient></defs><rect width="64" height="64" rx="14" fill="url(#pw-logo-1)" /><path class="logo__star" d="M32 7.5c1.1 5.6 2.9 7.4 8.5 8.5-5.6 1.1-7.4 2.9-8.5 8.5-1.1-5.6-2.9-7.4-8.5-8.5 5.6-1.1 7.4-2.9 8.5-8.5Z" fill="#fcd34d" /><path d="M30.8 28.2C25.6 25.6 19.4 25 13 26v23.2c6.4-1 12.6-.4 17.8 2.2Z" fill="#fff" /><path d="M33.2 28.2c5.2-2.6 11.4-3.2 17.8-2.2v23.2c-6.4-1-12.6-.4-17.8 2.2Z" fill="#eef2ff" /></svg></span>
+        <span>Prep<b>Ways</b></span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="https://mentor.prepways.in/">Mentorship + Counselling</a></li>
+          <li><a href="https://school.prepways.in/">School Management</a></li>
+        </ul>
+      </nav>
+      <div class="nav__actions">
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle colour theme">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" /></svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" /></svg>
+        </button>
+        <button class="icon-btn nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="legal-hero">
+        <div class="container">
+          <span class="kicker">Legal</span>
+          <h1 class="section__title">Privacy <span class="gradient-text">Policy</span></h1>
+          <p class="section__lead">Here is what we collect, why we collect it, and how you stay in control.</p>
+          <p class="legal__updated">Last updated: <time datetime="2026-10-26">26 October 2026</time></p>
+        </div>
+      </section>
+      <div class="container legal">
+        <nav class="legal__toc" aria-label="On this page">
+          <h2>On this page</h2>
+          <ol>
+              <li><a href="#overview">Overview</a></li>
+              <li><a href="#collect">Information collected</a></li>
+              <li><a href="#use">Use of information</a></li>
+              <li><a href="#consent">Consent</a></li>
+              <li><a href="#share">Data sharing and disclosure</a></li>
+              <li><a href="#security">Data security and retention</a></li>
+              <li><a href="#user-security">Keeping your data safe</a></li>
+              <li><a href="#device">Cookies and data stored on your device</a></li>
+              <li><a href="#children">Students under 18</a></li>
+              <li><a href="#schools">School management data</a></li>
+              <li><a href="#rights">User rights and inquiries</a></li>
+              <li><a href="#changes">Changes to this policy</a></li>
+              <li><a href="#contact">Contact and grievance officer</a></li>
+          </ol>
+        </nav>
+        <article class="legal__body">
+          <section id="overview">
+            <h2>Overview</h2>
+            <p>This Privacy Policy explains what personal data PrepWays collects through our website, the installable PrepWays app, the NEET rank predictor and the school management platform, how we use it and the choices you have. We process personal data in line with the Digital Personal Data Protection Act, 2023 and the Information Technology Act, 2000.</p>
+          </section>
+          <section id="collect">
+            <h2>Information collected</h2>
+            <ul>
+              <li><strong>Identity and Contact:</strong> Name, email address, phone number, and physical address.</li>
+              <li><strong>Academic Data:</strong> Target exam (IIT-JEE, NEET), target colleges, current school or coaching details, grades, and mock test scores.</li>
+              <li><strong>Rank Predictor:</strong> Name, state, exam, marks and mobile number, plus whether the mobile number was verified by OTP.</li>
+              <li><strong>School Management Data:</strong> Student rosters, staff directories, and administrative metrics uploaded by authorized institutions.</li>
+              <li><strong>Payment Details:</strong> Transaction IDs, payment mode, AutoPay mandate status and billing records (processed securely through certified third-party payment gateways; platform servers do not store full credit/debit card credentials or UPI PINs).</li>
+              <li><strong>Technical Logs:</strong> IP address, device type, browser information, and usage analytics.</li>
+            </ul>
+          </section>
+          <section id="use">
+            <h2>Use of information</h2>
+            <ul>
+              <li>Deliver personalized counseling schedules, guidance sessions, and test preparation resources.</li>
+              <li>Authenticate user access and manage enterprise school management accounts.</li>
+              <li>Verify mobile numbers by OTP and show rank predictions.</li>
+              <li>Process transactions and dispatch operational notices (e.g., maintenance schedules, billing receipts, AutoPay pre-debit reminders).</li>
+              <li>Contact you about your enquiry and our services (you can opt out of promotional messages at any time).</li>
+              <li>Diagnose platform bugs, monitor system load, and improve mobile/web performance.</li>
+            </ul>
+          </section>
+          <section id="consent">
+            <h2>Consent</h2>
+            <p>We process personal data based on the consent you give when you register, submit a form, use the rank predictor or make a payment, and where the law otherwise allows. You can withdraw consent at any time by emailing <a href="mailto:prepways23@gmail.com">prepways23@gmail.com</a>. Withdrawal does not affect processing already done, but we may no longer be able to provide some services.</p>
+          </section>
+          <section id="share">
+            <h2>Data sharing and disclosure</h2>
+            <ul>
+              <li>Data is not sold, rented, or traded to third-party marketing firms.</li>
+              <li>Data is shared only with verified service providers (cloud hosting, payment processors, SMS/email gateways) strictly to maintain platform operations, or when mandated by law.</li>
+              <li>Your details are also shared with the PrepWays mentor assigned to you and, for school programmes, with your school.</li>
+            </ul>
+          </section>
+          <section id="security">
+            <h2>Data security and retention</h2>
+            <ul>
+              <li>Standard industry practices—including data encryption in transit and secure database configurations—are deployed to safeguard user records.</li>
+              <li>Data is retained as long as the account remains active or as required by applicable tax, accounting, and legal requirements.</li>
+              <li>One-time passwords expire after 5 minutes and are not stored after verification.</li>
+              <li>Enquiry and rank predictor details from people without an account are kept for up to 2 years after the last contact, then deleted or anonymised.</li>
+            </ul>
+          </section>
+          <section id="user-security">
+            <h2>Keeping your data safe</h2>
+            <p>Protecting your information is a shared responsibility. We secure our systems; you are responsible for keeping your own devices and login details safe.</p>
+            <ul>
+              <li>Never share your OTP, password or login details with anyone. PrepWays staff will never ask for your OTP or password.</li>
+              <li>Keep your phone, computer and email account secure with a screen lock, strong passwords and up-to-date software.</li>
+              <li>Log out of the platform on shared or public devices, and do not save your password on them.</li>
+              <li>Be careful with links, calls or messages that claim to be from PrepWays. Our official email address is <a href="mailto:prepways23@gmail.com">prepways23@gmail.com</a>.</li>
+              <li>School administrators must give platform access only to authorised staff and remove access for staff who leave.</li>
+            </ul>
+            <p>
+              <strong>PrepWays is not responsible for any data breach, loss or misuse that happens because of a problem on your side</strong>, for
+              example if you share your OTP or password, lose your phone, use an infected or unsecured device, or your email or mobile account is
+              hacked. If you think your account or data has been misused, tell us immediately at
+              <a href="mailto:prepways23@gmail.com">prepways23@gmail.com</a> so we can help secure it.
+            </p>
+            <p>
+              If a breach happens on our systems, we will act quickly to contain it, and we will inform affected users and the Data Protection
+              Board of India as required by law.
+            </p>
+          </section>
+          <section id="device">
+            <h2>Cookies and data stored on your device</h2>
+            <p>The platform stores a few small settings in your browser: your light/dark theme, whether you dismissed the "Install app" bar, and a short-lived note used for smooth page transitions. If you install the app, a copy of our pages is saved on your device so it works offline. You can clear these in your browser settings at any time.</p>
+            <p>We may show advertisements on the platform. We do not sell your personal data to advertisers. If we add advertising partners that use cookies or similar technologies, we will update this policy and ask for your consent where the law requires it. We do not use the personal data of users under 18 for targeted advertising.</p>
+            <p>Our fonts are served by Google Fonts, which receives your IP address when the font files load.</p>
+          </section>
+          <section id="children">
+            <h2>Students under 18</h2>
+            <p>Many of our users are school students. If you are under 18, please use the platform and share personal data only with the consent of your parent or legal guardian. Parents and guardians can contact us to review or delete their child's data.</p>
+          </section>
+          <section id="schools">
+            <h2>School management data</h2>
+            <p>For data that a school uploads (such as student rosters and staff directories), the school decides why and how that data is used, and PrepWays processes it on the school's behalf and only on its instructions. Students, parents and staff should send requests about this data to their school first; we will help the school respond.</p>
+          </section>
+          <section id="rights">
+            <h2>User rights and inquiries</h2>
+            <ul>
+              <li>Users can review, update, or request deletion of their personal profile by reaching out to support.</li>
+              <li>Inquiries regarding privacy, billing disputes, or data protection can be sent to the designated support email address, <a href="mailto:prepways23@gmail.com">prepways23@gmail.com</a>.</li>
+              <li>Under Indian law you may also withdraw consent, nominate another person to exercise your rights if you are unable to, and, if your complaint is not resolved by us, approach the Data Protection Board of India.</li>
+            </ul>
+          </section>
+          <section id="changes">
+            <h2>Changes to this policy</h2>
+            <p>We may update this Privacy Policy when our services or the law change. The "Last updated" date at the top shows the current version, and we will highlight important changes on the platform.</p>
+          </section>
+          <section id="contact">
+            <h2>Contact and grievance officer</h2>
+            <p>For privacy questions, requests or complaints, contact our grievance officer at <a href="mailto:prepways23@gmail.com">prepways23@gmail.com</a>. We acknowledge requests within 48 hours and respond within one month.</p>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <a class="brand" href="index.html" aria-label="PrepWays home">
+              <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="pw-logo-2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6" /><stop offset=".55" stop-color="#5b6cf2" /><stop offset="1" stop-color="#14c3b0" /></linearGradient></defs><rect width="64" height="64" rx="14" fill="url(#pw-logo-2)" /><path class="logo__star" d="M32 7.5c1.1 5.6 2.9 7.4 8.5 8.5-5.6 1.1-7.4 2.9-8.5 8.5-1.1-5.6-2.9-7.4-8.5-8.5 5.6-1.1 7.4-2.9 8.5-8.5Z" fill="#fcd34d" /><path d="M30.8 28.2C25.6 25.6 19.4 25 13 26v23.2c6.4-1 12.6-.4 17.8 2.2Z" fill="#fff" /><path d="M33.2 28.2c5.2-2.6 11.4-3.2 17.8-2.2v23.2c-6.4-1-12.6-.4-17.8 2.2Z" fill="#eef2ff" /></svg></span>
+              <span>Prep<b>Ways</b></span>
+            </a>
+            <p>Counselling and guidance for JEE &amp; NEET students by IIT alumni and MBBS students — and partnerships that help schools grow.</p>
+          </div>
+          <div>
+            <h4>Programs</h4>
+            <ul>
+              <li><a href="https://mentor.prepways.in/">Mentorship + Counselling</a></li>
+              <li><a href="https://school.prepways.in/">School Management</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li><a href="index.html#what-we-do">What we do</a></li>
+              <li><a href="https://school.prepways.in/">Partner with us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Reach us</h4>
+            <ul>
+              <li><a href="mailto:prepways23@gmail.com">prepways23@gmail.com</a></li>
+              <li>+91 00000 00000</li>
+              <li>Mon–Sat, 9am – 8pm</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>© <span data-year>2026</span> PrepWays. All rights reserved.</span>
+          <nav class="footer__legal" aria-label="Legal">
+            <a href="terms.html">Terms &amp; Conditions</a>
+            <a href="privacy.html">Privacy Policy</a>
+          </nav>
+          <button class="btn btn--sm footer__install" type="button" data-install hidden>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5" /><path d="M5 21h14" /></svg>
+            Install app
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <button class="icon-btn to-top" type="button" aria-label="Back to top">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+    </button>
+  </body>
+</html>

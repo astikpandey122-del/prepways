@@ -1,0 +1,740 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrepWays — JEE &amp; NEET Mentorship + Counselling &amp; School Management Software</title>
+    <meta
+      name="description"
+      content="PrepWays offers JEE and NEET counselling and mentorship from IIT alumni and MBBS students, and school management software for teachers and students: attendance, tests, progress dashboards and parent reports."
+    />
+    <meta
+      name="keywords"
+      content="PrepWays, prepways, JEE counselling, NEET counselling, JEE mentorship, NEET mentorship, education rank predictor, NEET rank predictor, NEET result, JEE result, JoSAA choice filling, MCC counselling, IIT JEE guidance, MBBS NEET guidance, school management, college predictor"
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="PrepWays" />
+    <link rel="canonical" href="https://prepways.in/" />
+    <meta name="theme-color" content="#070816" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="PrepWays" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:title" content="PrepWays — JEE &amp; NEET Mentorship + Counselling &amp; School Management Software" />
+    <meta property="og:description" content="JEE &amp; NEET counselling and mentorship by IIT alumni and MBBS students, and school management software for teachers and students." />
+    <meta property="og:url" content="https://prepways.in/" />
+    <meta property="og:image" content="https://prepways.in/icons/icon-512.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PrepWays — JEE &amp; NEET Mentorship + Counselling &amp; School Management Software" />
+    <meta name="twitter:description" content="Counselling and mentorship for JEE &amp; NEET students by IIT alumni and MBBS students, plus school management software for teachers and students." />
+    <meta name="twitter:image" content="https://prepways.in/icons/icon-512.png" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="PrepWays" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Apply saved / system theme before paint to avoid a flash -->
+    <script>
+      (function () {
+        var t;
+        try { t = localStorage.getItem('prepways-theme'); } catch (e) {}
+        if (!t) t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.dataset.theme = t;
+        // Arriving from another PrepWays page (or back/forward): skip the loader
+        try {
+          var n = sessionStorage.getItem('prepways-nav');
+          var e = performance.getEntriesByType('navigation')[0];
+          if (n || (e && e.type === 'back_forward')) document.documentElement.classList.add('is-nav');
+          sessionStorage.removeItem('prepways-nav');
+        } catch (err) {}
+      })();
+    </script>
+    <!-- Render-blocking stylesheet so pages never paint unstyled -->
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <script type="module" src="/src/js/main.js"></script>
+
+    <!-- Structured data for rich results & brand search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://prepways.in/#organization",
+          "name": "PrepWays",
+          "alternateName": "Prep Ways",
+          "url": "https://prepways.in/",
+          "logo": "https://prepways.in/icons/icon-512.png",
+          "email": "prepways23@gmail.com",
+          "description": "Counselling and mentorship for JEE and NEET students by IIT alumni and MBBS students, plus school management software for teachers and students.",
+          "areaServed": "IN",
+          "sameAs": []
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://prepways.in/#website",
+          "url": "https://prepways.in/",
+          "name": "PrepWays",
+          "publisher": { "@id": "https://prepways.in/#organization" },
+          "inLanguage": "en-IN",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": { "@type": "EntryPoint", "urlTemplate": "https://prepways.in/?q={search_term_string}" },
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "PrepWays",
+          "url": "https://prepways.in/",
+          "description": "JEE and NEET counselling, mentorship and admission guidance from IIT alumni and MBBS students.",
+          "makesOffer": [
+            { "@type": "Offer", "category": "JEE & NEET Mentorship + Counselling", "url": "https://mentor.prepways.in/" },
+            { "@type": "Offer", "category": "School Management", "url": "https://school.prepways.in/" }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Who can join PrepWays counselling?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Students who have appeared in or qualified JEE Main, JEE Advanced or NEET UG — and aspirants in Class 11, 12 or a drop year who want structured preparation guidance." }
+            },
+            {
+              "@type": "Question",
+              "name": "Are the mentors really from IITs and medical colleges?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Yes. JEE mentors are IIT graduates and NEET mentors are MBBS students from leading medical colleges. Each mentor is verified before they are assigned to students." }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you guarantee a seat?",
+              "acceptedAnswer": { "@type": "Answer", "text": "No honest counsellor can guarantee a seat. We guarantee a well-researched strategy, accurate choice filling and support in every round so you get the best seat your rank allows." }
+            },
+            {
+              "@type": "Question",
+              "name": "How does school enrollment work?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Schools fill the enrollment form, we schedule a needs-assessment call, then design a program (seminars, foundation batches, dashboards) and launch it on campus." }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="loader" aria-hidden="true">
+      <div class="loader__inner">
+        <svg class="loader__logo" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="pw-logo-loader" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6" /><stop offset=".55" stop-color="#5b6cf2" /><stop offset="1" stop-color="#14c3b0" /></linearGradient></defs><rect width="64" height="64" rx="14" fill="url(#pw-logo-loader)" /><path class="logo__star" d="M32 7.5c1.1 5.6 2.9 7.4 8.5 8.5-5.6 1.1-7.4 2.9-8.5 8.5-1.1-5.6-2.9-7.4-8.5-8.5 5.6-1.1 7.4-2.9 8.5-8.5Z" fill="#fcd34d" /><path d="M30.8 28.2C25.6 25.6 19.4 25 13 26v23.2c6.4-1 12.6-.4 17.8 2.2Z" fill="#fff" /><path d="M33.2 28.2c5.2-2.6 11.4-3.2 17.8-2.2v23.2c-6.4-1-12.6-.4-17.8 2.2Z" fill="#eef2ff" /></svg>
+        <span>Prep<span class="gradient-text">Ways</span></span>
+      </div>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="bg-fx" aria-hidden="true">
+      <div class="orb orb--1"></div>
+      <div class="orb orb--2"></div>
+      <div class="orb orb--3"></div>
+    </div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <!-- ============ NAV ============ -->
+    <header class="nav">
+      <a class="brand" href="index.html" aria-label="PrepWays home">
+        <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="pw-logo-1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6" /><stop offset=".55" stop-color="#5b6cf2" /><stop offset="1" stop-color="#14c3b0" /></linearGradient></defs><rect width="64" height="64" rx="14" fill="url(#pw-logo-1)" /><path class="logo__star" d="M32 7.5c1.1 5.6 2.9 7.4 8.5 8.5-5.6 1.1-7.4 2.9-8.5 8.5-1.1-5.6-2.9-7.4-8.5-8.5 5.6-1.1 7.4-2.9 8.5-8.5Z" fill="#fcd34d" /><path d="M30.8 28.2C25.6 25.6 19.4 25 13 26v23.2c6.4-1 12.6-.4 17.8 2.2Z" fill="#fff" /><path d="M33.2 28.2c5.2-2.6 11.4-3.2 17.8-2.2v23.2c-6.4-1-12.6-.4-17.8 2.2Z" fill="#eef2ff" /></svg></span>
+        <span>Prep<b>Ways</b></span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="https://mentor.prepways.in/">Mentorship + Counselling</a></li>
+          <li><a href="https://school.prepways.in/">School Management</a></li>
+        </ul>
+      </nav>
+      <div class="nav__actions">
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle colour theme">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" /></svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" /></svg>
+        </button>
+        <button class="icon-btn nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section class="hero" aria-labelledby="hero-title">
+
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <span class="eyebrow" data-intro style="--i: 0">
+              <span class="eyebrow__dot">NEW</span> 2027 counselling batches now open
+            </span>
+            <h1 class="hero__title" id="hero-title">
+              <span class="line"><span style="--i: 0">Your guided way</span></span>
+              <span class="line"><span style="--i: 1">to <span class="gradient-text rotator" data-rotate="IIT|AIIMS|NIT|MBBS|your dream|a smarter" data-rotate-tail="college.|college.|college.|college.|college.|school." data-rotate-tail-target="#hero-tail" aria-hidden="true">IIT</span></span></span>
+              <span class="sr-only">IIT, AIIMS, NIT, MBBS, your dream college and a smarter school</span>
+              <span class="line"><span style="--i: 2" id="hero-tail" aria-hidden="true">college.</span></span>
+            </h1>
+            <p class="hero__lead" data-intro style="--i: 1">
+              PrepWays mentors students selected in <strong>JEE</strong> and <strong>NEET</strong> through counselling, choice filling and
+              admission, with IIT alumni and MBBS students by their side. For schools, our
+              <a href="#school-management"><strong>school management software</strong></a> helps teachers and students track attendance, tests and progress.
+            </p>
+            <div class="hero__ctas" data-intro style="--i: 2">
+              <a class="btn btn--primary" href="https://mentor.prepways.in/" data-magnetic>
+                Mentorship + Counselling
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+              </a>
+              <a class="btn" href="https://school.prepways.in/" data-magnetic>
+                School Management
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+              </a>
+            </div>
+            <div class="trust" data-intro style="--i: 3">
+              <div class="avatars" aria-hidden="true"><span>AK</span><span>RS</span><span>PM</span><span>+</span></div>
+              <span><strong>Thousands of students</strong> guided by IITians &amp; MBBS students</span>
+            </div>
+          </div>
+
+          <!-- Sliding cards: Mentorship + Counselling and School Management -->
+          <div class="showcase" data-showcase data-intro style="--i: 2" role="region" aria-roledescription="carousel" aria-label="What PrepWays offers">
+            <div class="showcase__viewport" tabindex="0" aria-live="off">
+              <div class="showcase__track">
+
+                <a class="scard scard--mentor" href="https://mentor.prepways.in/" style="--c1: #8b5cf6; --c2: #22d3ee" aria-roledescription="slide" aria-label="1 of 4">
+                  <div class="scard__top">
+                    <span class="scard__tag">Mentorship + Counselling</span>
+                    <span class="scard__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z" /><path d="M6 12v5c3 3 9 3 12 0v-5" /></svg></span>
+                  </div>
+                  <h3>Choice filling, done right</h3>
+                  <p>Order hundreds of choices with IIT alumni and MBBS students so one mistake never costs you a seat.</p>
+                  <div class="scard__viz scard__pills" aria-hidden="true"><span>JoSAA</span><span>CSAB</span><span>MCC</span><span>State quota</span></div>
+                  <span class="scard__cta">Explore mentorship <i aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg></i></span>
+                </a>
+
+                <a class="scard scard--school" href="https://school.prepways.in/" style="--c1: #f59e0b; --c2: #10b981" aria-roledescription="slide" aria-label="2 of 4">
+                  <div class="scard__top">
+                    <span class="scard__tag">School Management</span>
+                    <span class="scard__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-5 7 5v11" /><path d="M9 21v-6h6v6" /></svg></span>
+                  </div>
+                  <h3>Attendance &amp; tests, simplified</h3>
+                  <p>Teachers mark attendance and enter marks from a phone. Class and chapter-wise analytics follow automatically.</p>
+                  <div class="scard__viz scard__bars" aria-hidden="true"><i style="--h: 55%"></i><i style="--h: 80%"></i><i style="--h: 65%"></i><i style="--h: 92%"></i><i style="--h: 72%"></i><i style="--h: 100%"></i></div>
+                  <span class="scard__cta">Explore school management <i aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg></i></span>
+                </a>
+
+                <a class="scard scard--mentor" href="https://mentor.prepways.in/" style="--c1: #ec4899; --c2: #8b5cf6" aria-roledescription="slide" aria-label="3 of 4">
+                  <div class="scard__top">
+                    <span class="scard__tag">Mentorship + Counselling</span>
+                    <span class="scard__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg></span>
+                  </div>
+                  <h3>Mentors who've done it</h3>
+                  <p>1:1 guidance from IIT graduates and MBBS students, from preparation plans to the final admission round.</p>
+                  <div class="scard__viz scard__people" aria-hidden="true"><span>IB</span><span>ID</span><span>AI</span><span>MC</span><em>IIT alumni &amp; MBBS students</em></div>
+                  <span class="scard__cta">Meet your mentor <i aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg></i></span>
+                </a>
+
+                <a class="scard scard--school" href="https://school.prepways.in/" style="--c1: #10b981; --c2: #22d3ee" aria-roledescription="slide" aria-label="4 of 4">
+                  <div class="scard__top">
+                    <span class="scard__tag">School Management</span>
+                    <span class="scard__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M3 3v18h18" /><path d="m19 9-5 5-4-4-3 3" /></svg></span>
+                  </div>
+                  <h3>Progress for every student</h3>
+                  <p>Students track their own scores and attendance, and parents get clear monthly reports from the school.</p>
+                  <div class="scard__viz scard__pills" aria-hidden="true"><span>Teachers</span><span>Students</span><span>Parents</span><span>Principals</span></div>
+                  <span class="scard__cta">See how it works <i aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg></i></span>
+                </a>
+
+              </div>
+            </div>
+            <div class="showcase__controls">
+              <button class="showcase__arrow" type="button" data-showcase-prev aria-label="Previous card"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7" /></svg></button>
+              <div class="showcase__dots" role="group" aria-label="Choose a card">
+                <button type="button" aria-label="Show card 1"></button>
+                <button type="button" aria-label="Show card 2"></button>
+                <button type="button" aria-label="Show card 3"></button>
+                <button type="button" aria-label="Show card 4"></button>
+              </div>
+              <button class="showcase__arrow" type="button" data-showcase-next aria-label="Next card"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg></button>
+            </div>
+          </div>
+        </div>
+
+        <a class="scroll-cue" href="#what-we-do" aria-label="Scroll to what we do">
+          <span class="scroll-cue__mouse" aria-hidden="true"></span>
+          <span aria-hidden="true">Scroll</span>
+        </a>
+      </section>
+
+      <!-- ============ MARQUEE ============ -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span class="marquee__item">JEE Main</span><span class="marquee__item">JEE Advanced</span><span class="marquee__item">NEET UG</span><span class="marquee__item">JoSAA</span><span class="marquee__item">CSAB</span><span class="marquee__item">MCC Counselling</span><span class="marquee__item">State Quota</span><span class="marquee__item">School Partnerships</span>
+          <span class="marquee__item">JEE Main</span><span class="marquee__item">JEE Advanced</span><span class="marquee__item">NEET UG</span><span class="marquee__item">JoSAA</span><span class="marquee__item">CSAB</span><span class="marquee__item">MCC Counselling</span><span class="marquee__item">State Quota</span><span class="marquee__item">School Partnerships</span>
+        </div>
+      </div>
+
+      <!-- ============ WHAT WE DO (2 paths) ============ -->
+      <section class="section" id="what-we-do" aria-labelledby="wwd-title">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <span class="kicker">What we do</span>
+            <h2 class="section__title" id="wwd-title">Two paths. <span class="gradient-text">One clear direction.</span></h2>
+            <p class="section__lead">
+              Whether you've cracked JEE, cleared NEET or run a school — PrepWays turns confusing choices into a confident plan.
+            </p>
+          </div>
+
+          <div class="programs programs--two">
+            <!-- Mentorship + Counselling (JEE & NEET) -->
+            <article class="program-card tilt" data-tilt="8" data-reveal style="--i: 0">
+              <div class="program-card__stage depth-2" aria-hidden="true">
+                <div class="satellites"><i></i><i></i><i></i></div>
+                <div class="atom">
+                  <div class="atom__nucleus"></div>
+                  <div class="atom__orbit"></div>
+                  <div class="atom__orbit"></div>
+                  <div class="atom__orbit"></div>
+                </div>
+              </div>
+              <span class="program-card__tag depth-1">With IIT alumni &amp; MBBS students</span>
+              <h3 class="depth-1">Mentorship + Counselling for JEE &amp; NEET</h3>
+              <p class="depth-1">
+                IIT alumni and MBBS students guide you from preparation to admission: the right college, the right branch and every counselling round.
+              </p>
+              <ul class="ticks depth-1">
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>JoSAA, CSAB, MCC &amp; state quota choice filling</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Rank-based college &amp; branch planning</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>1:1 prep mentorship by IITians &amp; MBBS students</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Govt, deemed &amp; private college options</li>
+              </ul>
+              <a class="btn btn--primary depth-2" href="https://mentor.prepways.in/">
+                Explore mentorship + counselling
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+              </a>
+            </article>
+
+            <!-- School -->
+            <article class="program-card program-card--school tilt" data-tilt="8" data-reveal style="--i: 1">
+              <div class="program-card__stage depth-2" aria-hidden="true">
+                <div class="satellites"><i></i><i></i><i></i></div>
+                <div class="cube">
+                  <div class="cube__face"><svg class="icon" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-5 7 5v11" /><path d="M9 21v-6h6v6" /></svg></div>
+                  <div class="cube__face"><svg class="icon" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z" /><path d="M6 12v5c3 3 9 3 12 0v-5" /></svg></div>
+                  <div class="cube__face"><svg class="icon" viewBox="0 0 24 24"><path d="M3 3v18h18" /><path d="m19 9-5 5-4-4-3 3" /></svg></div>
+                  <div class="cube__face"><svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V2H6.5A2.5 2.5 0 0 0 4 4.5v15z" /></svg></div>
+                  <div class="cube__face"><svg class="icon" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /></svg></div>
+                  <div class="cube__face"><svg class="icon" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="13" rx="2" /><path d="M12 16v5M8 21h8" /></svg></div>
+                </div>
+              </div>
+              <span class="program-card__tag depth-1">For schools</span>
+              <h3 class="depth-1">School Management Software</h3>
+              <p class="depth-1">
+                One platform for principals, teachers and students: classes, attendance, tests, reports and parent updates, plus JEE/NEET foundation programs.
+              </p>
+              <ul class="ticks depth-1">
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Simple school enrollment &amp; onboarding</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Career seminars &amp; parent sessions</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Student performance dashboard</li>
+              </ul>
+              <a class="btn btn--primary depth-2" href="https://school.prepways.in/">
+                Explore school management
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SCHOOL MANAGEMENT ============ -->
+      <section class="section" id="school-management" style="padding-top: 0" aria-labelledby="sm-title">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <span class="kicker">School management</span>
+            <h2 class="section__title" id="sm-title">More than JEE &amp; NEET. <span class="gradient-text">Built for whole schools.</span></h2>
+            <p class="section__lead">
+              PrepWays school management software runs your school's day-to-day work in one place, for teachers, students,
+              principals and parents.
+            </p>
+          </div>
+          <div class="features">
+            <article class="feature tilt" data-tilt="10" data-reveal style="--i: 0">
+              <div class="feature__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 6h10M11 12h10M11 18h10" /><path d="m3 6 1 1 2-2M3 12l1 1 2-2M3 18l1 1 2-2" /></svg></div>
+              <span class="badge">For teachers</span>
+              <h3>Attendance in seconds</h3>
+              <p>Mark class and section attendance from your phone. Absences are recorded and parents can be told the same day.</p>
+            </article>
+            <article class="feature tilt" data-tilt="10" data-reveal style="--i: 1">
+              <div class="feature__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18" /><path d="m19 9-5 5-4-4-3 3" /></svg></div>
+              <span class="badge">For teachers</span>
+              <h3>Tests, marks &amp; analytics</h3>
+              <p>Enter marks once and see class, section and chapter-wise performance, so you know who needs extra help.</p>
+            </article>
+            <article class="feature tilt" data-tilt="10" data-reveal style="--i: 2">
+              <div class="feature__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><path d="M14 2v6h6M8 13h8M8 17h5" /></svg></div>
+              <span class="badge">For teachers</span>
+              <h3>Reports without paperwork</h3>
+              <p>Monthly progress reports for management and parents are generated for you, ready to share.</p>
+            </article>
+            <article class="feature tilt" data-tilt="10" data-reveal style="--i: 3">
+              <div class="feature__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2" /></svg></div>
+              <span class="badge">For students</span>
+              <h3>Track your own progress</h3>
+              <p>See your test scores, attendance and strong and weak chapters, and how you're improving month by month.</p>
+            </article>
+            <article class="feature tilt" data-tilt="10" data-reveal style="--i: 4">
+              <div class="feature__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V2H6.5A2.5 2.5 0 0 0 4 4.5v15z" /></svg></div>
+              <span class="badge">For students</span>
+              <h3>Foundation for Classes 8–12</h3>
+              <p>JEE and NEET foundation batches that fit alongside your school curriculum, not on top of it.</p>
+            </article>
+            <article class="feature tilt" data-tilt="10" data-reveal style="--i: 5">
+              <div class="feature__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /></svg></div>
+              <span class="badge">For students</span>
+              <h3>Career guidance at school</h3>
+              <p>Career seminars by IIT alumni and MBBS students on engineering, medicine and other paths after Class 12.</p>
+            </article>
+          </div>
+          <div class="hero__ctas" style="justify-content: center; margin-top: 32px" data-reveal>
+            <a class="btn btn--primary" href="https://school.prepways.in/" data-magnetic>
+              Explore school management
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ STATS ============ -->
+      <section class="section" style="padding-top: 0" aria-label="PrepWays in numbers">
+        <div class="container">
+          <div class="stats">
+            <div class="stat tilt" data-tilt="10" data-reveal style="--i: 0">
+              <span class="stat__num gradient-text" data-count="12000" data-suffix="+">0</span>
+              <span class="stat__label">Students counselled</span>
+            </div>
+            <div class="stat tilt" data-tilt="10" data-reveal style="--i: 1">
+              <span class="stat__num gradient-text" data-count="850" data-suffix="+">0</span>
+              <span class="stat__label">IIT &amp; NIT admissions guided</span>
+            </div>
+            <div class="stat tilt" data-tilt="10" data-reveal style="--i: 2">
+              <span class="stat__num gradient-text" data-count="1200" data-suffix="+">0</span>
+              <span class="stat__label">MBBS seats secured</span>
+            </div>
+            <div class="stat tilt" data-tilt="10" data-reveal style="--i: 3">
+              <span class="stat__num gradient-text" data-count="150" data-suffix="+">0</span>
+              <span class="stat__label">Partner schools</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ JOURNEY ============ -->
+      <section class="section" style="padding-top: 0" aria-labelledby="journey-title">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <span class="kicker">How we guide you</span>
+            <h2 class="section__title" id="journey-title">From result day to <span class="gradient-text">admission day</span></h2>
+            <p class="section__lead">A proven four-step journey that removes guesswork from every decision.</p>
+          </div>
+          <div class="journey">
+            <div class="step" style="--i: 0">
+              <div class="step__num"><span>01</span></div>
+              <h3>Assess</h3>
+              <p>We study your rank, category, state, budget and goals in a free discovery call.</p>
+            </div>
+            <div class="step" style="--i: 1">
+              <div class="step__num"><span>02</span></div>
+              <h3>Plan</h3>
+              <p>A personalised college list and strategy built on previous-year cut-off data.</p>
+            </div>
+            <div class="step" style="--i: 2">
+              <div class="step__num"><span>03</span></div>
+              <h3>Mentor</h3>
+              <p>An IIT alumnus or MBBS student stays with you through every round and doubt.</p>
+            </div>
+            <div class="step" style="--i: 3">
+              <div class="step__num"><span>04</span></div>
+              <h3>Admit</h3>
+              <p>Choice locking, document checks and reporting — until you're on campus.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ WHY PREPWAYS ============ -->
+      <section class="section" style="padding-top: 0" aria-labelledby="why-title">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <span class="kicker">Why PrepWays</span>
+            <h2 class="section__title" id="why-title">Guidance that feels like <span class="gradient-text">a senior who cares</span></h2>
+          </div>
+          <div class="features">
+            <article class="feature tilt" data-tilt="10" data-reveal style="--i: 0">
+              <div class="feature__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg></div>
+              <h3>Mentors who've done it</h3>
+              <p>Every mentor is an IIT graduate or a current MBBS student — real experience, not scripts.</p>
+            </article>
+            <article class="feature tilt" data-tilt="10" data-reveal style="--i: 1">
+              <div class="feature__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18" /><path d="m19 9-5 5-4-4-3 3" /></svg></div>
+              <h3>Data-driven predictions</h3>
+              <p>Previous-year opening &amp; closing ranks power realistic, ambitious and safe college options.</p>
+            </article>
+            <article class="feature tilt" data-tilt="10" data-reveal style="--i: 2">
+              <div class="feature__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 6h10M11 12h10M11 18h10" /><path d="m3 6 1 1 2-2M3 12l1 1 2-2M3 18l1 1 2-2" /></svg></div>
+              <h3>Choice-filling done right</h3>
+              <p>We help you order hundreds of choices so a single mistake never costs you a seat.</p>
+            </article>
+            <article class="feature tilt" data-tilt="10" data-reveal style="--i: 3">
+              <div class="feature__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V2H6.5A2.5 2.5 0 0 0 4 4.5v15z" /><path d="M6.5 17A2.5 2.5 0 0 0 4 19.5 2.5 2.5 0 0 0 6.5 22H20v-5" /></svg></div>
+              <h3>Preparation roadmaps</h3>
+              <p>Class 11, 12 and dropper plans with weekly targets, mock analysis and revision cycles.</p>
+            </article>
+            <article class="feature tilt" data-tilt="10" data-reveal style="--i: 4">
+              <div class="feature__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /></svg></div>
+              <h3>Always reachable</h3>
+              <p>Live doubt sessions and a dedicated mentor chat during every counselling round.</p>
+            </article>
+            <article class="feature tilt" data-tilt="10" data-reveal style="--i: 5">
+              <div class="feature__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="m9 12 2 2 4-4" /></svg></div>
+              <h3>Parents in the loop</h3>
+              <p>Transparent updates and family sessions, so every decision is made together.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ MENTORS ============ -->
+      <section class="section" style="padding-top: 0" aria-labelledby="mentors-title">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <span class="kicker">Meet the mentors</span>
+            <h2 class="section__title" id="mentors-title">Learn from those who've <span class="gradient-text">been there</span></h2>
+            <p class="section__lead">Hover, tap or press Enter on a card to flip it.</p>
+          </div>
+          <div class="mentors">
+            <div class="flip" tabindex="0" data-reveal style="--i: 0" aria-label="IIT Bombay mentor. Activate to read more.">
+              <div class="flip__inner">
+                <div class="flip__face">
+                  <div class="mentor__avatar" aria-hidden="true">IB</div>
+                  <h3>IIT Bombay Alumnus</h3>
+                  <span class="mentor__role">B.Tech, Computer Science</span>
+                  <span class="badge">JoSAA strategy</span>
+                  <span class="flip__hint" aria-hidden="true">Flip ↻</span>
+                </div>
+                <div class="flip__face flip__back">
+                  <p>"Branch vs. IIT is the toughest call. I help students decide with data and their interests — not peer pressure."</p>
+                  <small>Mentored 400+ JEE students</small>
+                </div>
+              </div>
+            </div>
+            <div class="flip" tabindex="0" data-reveal style="--i: 1" aria-label="IIT Delhi mentor. Activate to read more.">
+              <div class="flip__inner">
+                <div class="flip__face">
+                  <div class="mentor__avatar" aria-hidden="true">ID</div>
+                  <h3>IIT Delhi Alumna</h3>
+                  <span class="mentor__role">B.Tech, Electrical Engineering</span>
+                  <span class="badge">JEE Advanced prep</span>
+                  <span class="flip__hint" aria-hidden="true">Flip ↻</span>
+                </div>
+                <div class="flip__face flip__back">
+                  <p>"Consistency beats intensity. We build weekly plans that survive school, boards and burnout."</p>
+                  <small>Physics &amp; Maths strategy lead</small>
+                </div>
+              </div>
+            </div>
+            <div class="flip" tabindex="0" data-reveal style="--i: 2" aria-label="AIIMS MBBS student mentor. Activate to read more.">
+              <div class="flip__inner">
+                <div class="flip__face">
+                  <div class="mentor__avatar" aria-hidden="true">AI</div>
+                  <h3>AIIMS MBBS Student</h3>
+                  <span class="mentor__role">MBBS, Final year</span>
+                  <span class="badge">MCC counselling</span>
+                  <span class="flip__hint" aria-hidden="true">Flip ↻</span>
+                </div>
+                <div class="flip__face flip__back">
+                  <p>"AIQ, state quota, deemed — the rules change every round. I make sure no student misses a better seat."</p>
+                  <small>Guided 300+ NEET aspirants</small>
+                </div>
+              </div>
+            </div>
+            <div class="flip" tabindex="0" data-reveal style="--i: 3" aria-label="MAMC MBBS student mentor. Activate to read more.">
+              <div class="flip__inner">
+                <div class="flip__face">
+                  <div class="mentor__avatar" aria-hidden="true">MC</div>
+                  <h3>MBBS Student, MAMC</h3>
+                  <span class="mentor__role">Biology &amp; NCERT specialist</span>
+                  <span class="badge">NEET prep</span>
+                  <span class="flip__hint" aria-hidden="true">Flip ↻</span>
+                </div>
+                <div class="flip__face flip__back">
+                  <p>"NEET is won line by line in NCERT. I teach students how to read, revise and recall it all on exam day."</p>
+                  <small>Biology mentor</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TESTIMONIALS ============ -->
+      <section class="section" style="padding-top: 0" aria-labelledby="testi-title">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <span class="kicker">Student stories</span>
+            <h2 class="section__title" id="testi-title">Decisions made with <span class="gradient-text">confidence</span></h2>
+          </div>
+        </div>
+        <div class="testimonials">
+          <div class="marquee">
+            <div class="marquee__track">
+              <figure class="quote"><div class="quote__stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote><p>My mentor helped me order 180+ JoSAA choices. I got a branch I genuinely wanted at an IIT.</p></blockquote><figcaption class="quote__who"><span class="initials" aria-hidden="true">AS</span><span><b>Aarav S.</b><span>JEE Advanced</span></span></figcaption></figure>
+              <figure class="quote"><div class="quote__stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote><p>My MBBS mentor explained AIQ vs state quota so simply. We upgraded to a better government college in round 2.</p></blockquote><figcaption class="quote__who"><span class="initials" aria-hidden="true">PM</span><span><b>Priya M.</b><span>NEET UG</span></span></figcaption></figure>
+              <figure class="quote"><div class="quote__stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote><p>As a parent, the weekly updates gave us peace of mind through a very stressful month.</p></blockquote><figcaption class="quote__who"><span class="initials" aria-hidden="true">RK</span><span><b>R. Kumar</b><span>Parent</span></span></figcaption></figure>
+              <figure class="quote"><div class="quote__stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote><p>The dropper-year roadmap fixed my revision cycle. My JEE Main percentile jumped massively.</p></blockquote><figcaption class="quote__who"><span class="initials" aria-hidden="true">NV</span><span><b>Neha V.</b><span>JEE Main</span></span></figcaption></figure>
+              <figure class="quote"><div class="quote__stars" aria-label="5 out of 5 stars">★★★★★</div><blockquote><p>Our school's career seminar with PrepWays had students lining up with questions for an hour.</p></blockquote><figcaption class="quote__who"><span class="initials" aria-hidden="true">SP</span><span><b>School Principal</b><span>Partner school</span></span></figcaption></figure>
+              <!-- duplicate set for seamless loop -->
+              <figure class="quote" aria-hidden="true"><div class="quote__stars">★★★★★</div><blockquote><p>My mentor helped me order 180+ JoSAA choices. I got a branch I genuinely wanted at an IIT.</p></blockquote><figcaption class="quote__who"><span class="initials">AS</span><span><b>Aarav S.</b><span>JEE Advanced</span></span></figcaption></figure>
+              <figure class="quote" aria-hidden="true"><div class="quote__stars">★★★★★</div><blockquote><p>My MBBS mentor explained AIQ vs state quota so simply. We upgraded to a better government college in round 2.</p></blockquote><figcaption class="quote__who"><span class="initials">PM</span><span><b>Priya M.</b><span>NEET UG</span></span></figcaption></figure>
+              <figure class="quote" aria-hidden="true"><div class="quote__stars">★★★★★</div><blockquote><p>As a parent, the weekly updates gave us peace of mind through a very stressful month.</p></blockquote><figcaption class="quote__who"><span class="initials">RK</span><span><b>R. Kumar</b><span>Parent</span></span></figcaption></figure>
+              <figure class="quote" aria-hidden="true"><div class="quote__stars">★★★★★</div><blockquote><p>The dropper-year roadmap fixed my revision cycle. My JEE Main percentile jumped massively.</p></blockquote><figcaption class="quote__who"><span class="initials">NV</span><span><b>Neha V.</b><span>JEE Main</span></span></figcaption></figure>
+              <figure class="quote" aria-hidden="true"><div class="quote__stars">★★★★★</div><blockquote><p>Our school's career seminar with PrepWays had students lining up with questions for an hour.</p></blockquote><figcaption class="quote__who"><span class="initials">SP</span><span><b>School Principal</b><span>Partner school</span></span></figcaption></figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SCHOOL CTA ============ -->
+      <section class="section" style="padding-top: 0" aria-labelledby="school-cta-title">
+        <div class="container">
+          <div class="cta-band" data-reveal="zoom">
+            <div>
+              <span class="kicker" style="color: #fff">For schools</span>
+              <h2 id="school-cta-title">Bring PrepWays to your school</h2>
+              <p>
+                Enroll your school for JEE/NEET foundation programs, career counselling, teacher workshops and a student
+                progress dashboard.
+              </p>
+              <div class="hero__ctas" style="margin: 0">
+                <a class="btn" href="https://school.prepways.in/" data-magnetic>
+                  Enroll your school
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                </a>
+                <a class="btn btn--ghost" href="https://school.prepways.in/">See benefits</a>
+              </div>
+            </div>
+            <div class="cta-band__visual" aria-hidden="true">
+              <div class="cube">
+                <div class="cube__face"><svg class="icon" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-5 7 5v11" /><path d="M9 21v-6h6v6" /></svg></div>
+                <div class="cube__face"><svg class="icon" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z" /><path d="M6 12v5c3 3 9 3 12 0v-5" /></svg></div>
+                <div class="cube__face"><svg class="icon" viewBox="0 0 24 24"><path d="M3 3v18h18" /><path d="m19 9-5 5-4-4-3 3" /></svg></div>
+                <div class="cube__face"><svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V2H6.5A2.5 2.5 0 0 0 4 4.5v15z" /></svg></div>
+                <div class="cube__face"><svg class="icon" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /></svg></div>
+                <div class="cube__face"><svg class="icon" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="13" rx="2" /><path d="M12 16v5M8 21h8" /></svg></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FAQ ============ -->
+      <section class="section" style="padding-top: 0" aria-labelledby="faq-title">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <span class="kicker">FAQ</span>
+            <h2 class="section__title" id="faq-title">Questions, <span class="gradient-text">answered</span></h2>
+          </div>
+          <div class="faq">
+            <details data-reveal style="--i: 0">
+              <summary>Who can join PrepWays counselling?</summary>
+              <div class="faq__body">Students who have appeared in or qualified JEE Main, JEE Advanced or NEET UG — and aspirants in Class 11, 12 or a drop year who want structured preparation guidance.</div>
+            </details>
+            <details data-reveal style="--i: 1">
+              <summary>Are the mentors really from IITs and medical colleges?</summary>
+              <div class="faq__body">Yes. JEE mentors are IIT graduates and NEET mentors are MBBS students from leading medical colleges. Each mentor is verified before they are assigned to students.</div>
+            </details>
+            <details data-reveal style="--i: 2">
+              <summary>Do you guarantee a seat?</summary>
+              <div class="faq__body">No honest counsellor can guarantee a seat. We guarantee a well-researched strategy, accurate choice filling and support in every round so you get the best seat your rank allows.</div>
+            </details>
+            <details data-reveal style="--i: 3">
+              <summary>How does school enrollment work?</summary>
+              <div class="faq__body">Schools fill the enrollment form, we schedule a needs-assessment call, then design a program (seminars, foundation batches, dashboards) and launch it on campus.</div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <a class="brand" href="index.html" aria-label="PrepWays home">
+              <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="pw-logo-2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6" /><stop offset=".55" stop-color="#5b6cf2" /><stop offset="1" stop-color="#14c3b0" /></linearGradient></defs><rect width="64" height="64" rx="14" fill="url(#pw-logo-2)" /><path class="logo__star" d="M32 7.5c1.1 5.6 2.9 7.4 8.5 8.5-5.6 1.1-7.4 2.9-8.5 8.5-1.1-5.6-2.9-7.4-8.5-8.5 5.6-1.1 7.4-2.9 8.5-8.5Z" fill="#fcd34d" /><path d="M30.8 28.2C25.6 25.6 19.4 25 13 26v23.2c6.4-1 12.6-.4 17.8 2.2Z" fill="#fff" /><path d="M33.2 28.2c5.2-2.6 11.4-3.2 17.8-2.2v23.2c-6.4-1-12.6-.4-17.8 2.2Z" fill="#eef2ff" /></svg></span>
+              <span>Prep<b>Ways</b></span>
+            </a>
+            <p>Counselling and guidance for JEE &amp; NEET students by IIT alumni and MBBS students — and partnerships that help schools grow.</p>
+            <div class="socials">
+              <a href="#" aria-label="PrepWays on Instagram"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="4" /><path d="M17.5 6.5h.01" /></svg></a>
+              <a href="#" aria-label="PrepWays on YouTube"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" /><path d="m10 15 5-3-5-3z" /></svg></a>
+              <a href="#" aria-label="PrepWays on LinkedIn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" /></svg></a>
+            </div>
+          </div>
+          <div>
+            <h4>Programs</h4>
+            <ul>
+              <li><a href="https://mentor.prepways.in/">Mentorship + Counselling</a></li>
+              <li><a href="https://school.prepways.in/">School Management</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li><a href="index.html#what-we-do">What we do</a></li>
+              <li><a href="https://school.prepways.in/">Partner with us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Reach us</h4>
+            <ul>
+              <li><a href="mailto:prepways23@gmail.com">prepways23@gmail.com</a></li>
+              <li>+91 00000 00000</li>
+              <li>Mon–Sat, 9am – 8pm</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>© <span data-year>2026</span> PrepWays. All rights reserved.</span>
+          <nav class="footer__legal" aria-label="Legal">
+            <a href="terms.html">Terms &amp; Conditions</a>
+            <a href="privacy.html">Privacy Policy</a>
+          </nav>
+          <button class="btn btn--sm footer__install" type="button" data-install hidden>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5" /><path d="M5 21h14" /></svg>
+            Install app
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <button class="icon-btn to-top" type="button" aria-label="Back to top">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+    </button>
+  </body>
+</html>

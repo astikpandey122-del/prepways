@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Management Software for Teachers &amp; Students — PrepWays</title>
+    <meta
+      name="description"
+      content="PrepWays school management software for teachers and students: attendance, tests and marks, progress dashboards, monthly reports for parents, plus JEE/NEET foundation programs and career counselling."
+    />
+    <meta
+      name="keywords"
+      content="PrepWays, school management, school management software, school ERP, attendance management, student performance dashboard, teacher app, JEE NEET foundation program, career counselling for schools"
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="PrepWays" />
+    <link rel="canonical" href="https://prepways.in/school.html" />
+    <meta name="theme-color" content="#070816" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="PrepWays" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:title" content="School Management Software for Teachers &amp; Students — PrepWays" />
+    <meta property="og:description" content="Attendance, tests, progress dashboards and parent reports for teachers and students, plus JEE/NEET foundation programs." />
+    <meta property="og:url" content="https://prepways.in/school.html" />
+    <meta property="og:image" content="https://prepways.in/icons/icon-512.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="School Management Software for Teachers &amp; Students — PrepWays" />
+    <meta name="twitter:description" content="Attendance, tests, progress dashboards and parent reports for teachers and students." />
+    <meta name="twitter:image" content="https://prepways.in/icons/icon-512.png" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="PrepWays" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        var t;
+        try { t = localStorage.getItem('prepways-theme'); } catch (e) {}
+        if (!t) t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.dataset.theme = t;
+        // Arriving from another PrepWays page (or back/forward): skip the loader
+        try {
+          var n = sessionStorage.getItem('prepways-nav');
+          var e = performance.getEntriesByType('navigation')[0];
+          if (n || (e && e.type === 'back_forward')) document.documentElement.classList.add('is-nav');
+          sessionStorage.removeItem('prepways-nav');
+        } catch (err) {}
+      })();
+    </script>
+    <!-- Render-blocking stylesheet so pages never paint unstyled -->
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <script type="module" src="/src/js/main.js"></script>
+  </head>
+  <body class="page-school">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="loader" aria-hidden="true">
+      <div class="loader__inner">
+        <svg class="loader__logo" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="pw-logo-loader" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6" /><stop offset=".55" stop-color="#5b6cf2" /><stop offset="1" stop-color="#14c3b0" /></linearGradient></defs><rect width="64" height="64" rx="14" fill="url(#pw-logo-loader)" /><path class="logo__star" d="M32 7.5c1.1 5.6 2.9 7.4 8.5 8.5-5.6 1.1-7.4 2.9-8.5 8.5-1.1-5.6-2.9-7.4-8.5-8.5 5.6-1.1 7.4-2.9 8.5-8.5Z" fill="#fcd34d" /><path d="M30.8 28.2C25.6 25.6 19.4 25 13 26v23.2c6.4-1 12.6-.4 17.8 2.2Z" fill="#fff" /><path d="M33.2 28.2c5.2-2.6 11.4-3.2 17.8-2.2v23.2c-6.4-1-12.6-.4-17.8 2.2Z" fill="#eef2ff" /></svg>
+        <span>Prep<span class="gradient-text">Ways</span></span>
+      </div>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="bg-fx" aria-hidden="true">
+      <div class="orb orb--1"></div>
+      <div class="orb orb--2"></div>
+      <div class="orb orb--3"></div>
+    </div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="nav">
+      <a class="brand" href="index.html" aria-label="PrepWays home">
+        <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="pw-logo-1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6" /><stop offset=".55" stop-color="#5b6cf2" /><stop offset="1" stop-color="#14c3b0" /></linearGradient></defs><rect width="64" height="64" rx="14" fill="url(#pw-logo-1)" /><path class="logo__star" d="M32 7.5c1.1 5.6 2.9 7.4 8.5 8.5-5.6 1.1-7.4 2.9-8.5 8.5-1.1-5.6-2.9-7.4-8.5-8.5 5.6-1.1 7.4-2.9 8.5-8.5Z" fill="#fcd34d" /><path d="M30.8 28.2C25.6 25.6 19.4 25 13 26v23.2c6.4-1 12.6-.4 17.8 2.2Z" fill="#fff" /><path d="M33.2 28.2c5.2-2.6 11.4-3.2 17.8-2.2v23.2c-6.4-1-12.6-.4-17.8 2.2Z" fill="#eef2ff" /></svg></span>
+        <span>Prep<b>Ways</b></span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="https://mentor.prepways.in/">Mentorship + Counselling</a></li>
+          <li><a href="https://school.prepways.in/" aria-current="page">School Management</a></li>
+          <li class="nav__mobile-cta"><a class="btn btn--primary btn--block" href="#enroll">Enroll your school</a></li>
+        </ul>
+      </nav>
+      <div class="nav__actions">
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle colour theme">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" /></svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" /></svg>
+        </button>
+        <a class="btn btn--primary btn--sm nav__cta" href="#enroll" data-magnetic>Enroll your school</a>
+        <button class="icon-btn nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero hero--sub" aria-labelledby="school-title">
+        <canvas class="hero__canvas" data-scene="school" aria-hidden="true"></canvas>
+        <div class="chips" aria-hidden="true">
+          <div class="chip" style="top: 22%; right: 5%; --d: -2s">
+            <span class="chip__icon"><svg class="icon" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="13" rx="2" /><path d="M12 16v5M8 21h8" /></svg></span>
+            <span>Career seminars<small>On campus &amp; online</small></span>
+          </div>
+          <div class="chip" style="bottom: 18%; right: 24%; --d: -4s">
+            <span class="chip__icon"><svg class="icon" viewBox="0 0 24 24"><path d="M3 3v18h18" /><path d="m19 9-5 5-4-4-3 3" /></svg></span>
+            <span>Progress dashboard<small>Class-wise insights</small></span>
+          </div>
+        </div>
+        <div class="container">
+          <div class="hero__content">
+            <span class="eyebrow" data-intro style="--i: 0"><span class="eyebrow__dot">SCHOOLS</span> Management &amp; partnership program</span>
+            <h1 class="hero__title" id="school-title">
+              <span class="line"><span style="--i: 0">Empower your school.</span></span>
+              <span class="line"><span style="--i: 1"><span class="gradient-text">Inspire every student.</span></span></span>
+            </h1>
+            <p class="hero__lead" data-intro style="--i: 1">
+              Enroll with PrepWays to bring JEE &amp; NEET foundation programs, career counselling by IIT alumni and MBBS students, and
+              clear progress tracking to your campus.
+            </p>
+            <div class="hero__ctas" data-intro style="--i: 2">
+              <a class="btn btn--primary" href="#enroll" data-magnetic>
+                Enroll your school
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+              </a>
+              <a class="btn" href="#pricing" data-magnetic>₹99 trial · See pricing</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span class="marquee__item">CBSE</span><span class="marquee__item">ICSE</span><span class="marquee__item">State Boards</span><span class="marquee__item">IB &amp; Cambridge</span><span class="marquee__item">Foundation Batches</span><span class="marquee__item">Career Fairs</span><span class="marquee__item">Teacher Workshops</span><span class="marquee__item">Parent Sessions</span>
+          <span class="marquee__item">CBSE</span><span class="marquee__item">ICSE</span><span class="marquee__item">State Boards</span><span class="marquee__item">IB &amp; Cambridge</span><span class="marquee__item">Foundation Batches</span><span class="marquee__item">Career Fairs</span><span class="marquee__item">Teacher Workshops</span><span class="marquee__item">Parent Sessions</span>
+        </div>
+      </div>
+
+      <!-- BENEFITS -->
+      <section class="section" id="benefits" aria-labelledby="benefits-title">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <span class="kicker">What your school gets</span>
+            <h2 class="section__title" id="benefits-title">A partner for your <span class="gradient-text">students' futures</span></h2>
+            <p class="section__lead">Plug-and-play programs that fit your timetable and scale with your school.</p>
+          </div>
+          <div class="features">
+            <article class="feature tilt" data-tilt="10" data-reveal style="--i: 0">
+              <div class="feature__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="13" rx="2" /><path d="M12 16v5M8 21h8" /></svg></div>
+              <h3>Career counselling seminars</h3>
+              <p>Sessions by IIT alumni and MBBS students on engineering, medicine and other career paths.</p>
+            </article>
+            <article class="feature tilt" data-tilt="10" data-reveal style="--i: 1">
+              <div class="feature__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6M10 3v6L4 20a1 1 0 0 0 .9 1.5h14.2A1 1 0 0 0 20 20L14 9V3" /><path d="M7 15h10" /></svg></div>
+              <h3>JEE &amp; NEET foundation</h3>
+              <p>Integrated foundation batches for Classes 8–12 that complement your school curriculum.</p>
+            </article>
+            <article class="feature tilt" data-tilt="10" data-reveal style="--i: 2">
+              <div class="feature__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18" /><path d="m19 9-5 5-4-4-3 3" /></svg></div>
+              <h3>Student performance dashboard</h3>
+              <p>Track test scores, attendance and chapter-wise strengths for every class in one place.</p>
+            </article>
+            <article class="feature tilt" data-tilt="10" data-reveal style="--i: 3">
+              <div class="feature__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg></div>
+              <h3>Teacher workshops</h3>
+              <p>Training on competitive-exam pedagogy, doubt handling and student mentoring.</p>
+            </article>
+            <article class="feature tilt" data-tilt="10" data-reveal style="--i: 4">
+              <div class="feature__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="m9 12 2 2 4-4" /></svg></div>
+              <h3>Parent counselling</h3>
+              <p>Sessions that help parents understand exams, timelines and how to support their children.</p>
+            </article>
+            <article class="feature tilt" data-tilt="10" data-reveal style="--i: 5">
+              <div class="feature__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22M18 2H6v7a6 6 0 0 0 12 0V2Z" /></svg></div>
+              <h3>Scholarship &amp; talent tests</h3>
+              <p>Identify high-potential students early with talent tests and scholarships for top performers.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- DASHBOARD SPLIT -->
+      <section class="section" style="padding-top: 0" aria-labelledby="dash-title">
+        <div class="container split">
+          <div data-reveal="left">
+            <span class="kicker">School management</span>
+            <h2 class="section__title" id="dash-title">See every student's <span class="gradient-text">progress</span> at a glance</h2>
+            <p class="section__lead">Principals, coordinators and teachers get a shared view of how each class is doing.</p>
+            <ul class="ticks" style="--c1: #f59e0b; --c2: #10b981">
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Class and section-wise test analytics</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Attendance for foundation batches</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Monthly reports for management and parents</li>
+            </ul>
+          </div>
+          <div class="dash-wrap" data-reveal="right" aria-hidden="true">
+            <div class="dash">
+              <div class="dash__top"><i></i><i></i><i></i><span>PrepWays · School dashboard (sample)</span></div>
+              <div class="dash__kpis">
+                <div class="kpi"><b>1,240</b><span>Students enrolled</span></div>
+                <div class="kpi"><b>86%</b><span>Avg. attendance</span></div>
+                <div class="kpi"><b>+18%</b><span>Score growth</span></div>
+              </div>
+              <div class="dash__chart">
+                <i style="--h: 42%; --i: 0"></i><i style="--h: 58%; --i: 1"></i><i style="--h: 50%; --i: 2"></i><i style="--h: 70%; --i: 3"></i><i style="--h: 64%; --i: 4"></i><i style="--h: 82%; --i: 5"></i><i style="--h: 76%; --i: 6"></i><i style="--h: 94%; --i: 7"></i>
+              </div>
+              <div class="dash__rows">
+                <div class="dash__row">Class 12 · PCM <span class="bar"><span style="--w: 82%"></span></span> 82%</div>
+                <div class="dash__row">Class 12 · PCB <span class="bar"><span style="--w: 76%"></span></span> 76%</div>
+                <div class="dash__row">Class 10 · Foundation <span class="bar"><span style="--w: 68%"></span></span> 68%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRICING -->
+      <section class="section" id="pricing" style="padding-top: 0" aria-labelledby="pricing-title">
+        <div class="container split">
+          <div data-reveal="left">
+            <span class="kicker">Pricing</span>
+            <h2 class="section__title" id="pricing-title">Try the school management tool for <span class="gradient-text">just ₹99</span></h2>
+            <p class="section__lead">Use every feature for a full week. If it works for your school, it continues automatically for the full year.</p>
+            <ol class="trial-steps">
+              <li>
+                <b>Today · ₹99</b>
+                <span>Set up AutoPay with UPI, debit or credit card and start your 7-day trial.</span>
+              </li>
+              <li>
+                <b>Day 6 · Reminder</b>
+                <span>We notify you at least 24 hours before the yearly charge. Cancel anytime before it.</span>
+              </li>
+              <li>
+                <b>Day 8 · ₹7,000 / year</b>
+                <span>Your yearly plan starts automatically and covers the next 12 months.</span>
+              </li>
+            </ol>
+          </div>
+
+          <article class="plan plan--featured plan--school tilt" data-tilt="6" data-reveal="right">
+            <span class="plan__badge">7-day trial</span>
+            <h3>School Management Tool</h3>
+            <p class="plan__desc">One plan for the whole school. No setup fee.</p>
+            <div class="plan__price">₹99 <small>for 7 days</small></div>
+            <p class="plan__then">then <b>₹7,000 / year</b> via AutoPay <span>(about ₹583 a month)</span></p>
+            <ul class="ticks">
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Student, class &amp; section management</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Attendance and test analytics dashboard</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Staff and teacher directory</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Monthly reports for management &amp; parents</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Works on mobile, tablet and desktop</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Email &amp; WhatsApp support</li>
+            </ul>
+            <a class="btn btn--primary btn--block" href="#enroll" data-select-plan="trial">Start ₹99 trial <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg></a>
+            <p class="form-note">Cancel before the trial ends and you won’t be charged ₹7,000. The ₹99 trial fee is non-refundable. See <a href="terms.html#subscriptions">subscription terms</a>.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section class="section" style="padding-top: 0" aria-labelledby="how-title">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <span class="kicker">How partnership works</span>
+            <h2 class="section__title" id="how-title">Live on your campus in <span class="gradient-text">four steps</span></h2>
+          </div>
+          <div class="journey">
+            <div class="step"><div class="step__num"><span>01</span></div><h3>Enroll</h3><p>Submit the enrollment form with your school's details.</p></div>
+            <div class="step"><div class="step__num"><span>02</span></div><h3>Assess</h3><p>We meet your leadership to understand goals and students.</p></div>
+            <div class="step"><div class="step__num"><span>03</span></div><h3>Customise</h3><p>A program plan that fits your board, timetable and budget.</p></div>
+            <div class="step"><div class="step__num"><span>04</span></div><h3>Launch &amp; track</h3><p>Sessions begin and your dashboard goes live.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section class="section" style="padding-top: 0" aria-label="School partnership numbers">
+        <div class="container">
+          <div class="stats">
+            <div class="stat tilt" data-tilt="10" data-reveal style="--i: 0"><span class="stat__num gradient-text" data-count="150" data-suffix="+">0</span><span class="stat__label">Partner schools</span></div>
+            <div class="stat tilt" data-tilt="10" data-reveal style="--i: 1"><span class="stat__num gradient-text" data-count="45000" data-suffix="+">0</span><span class="stat__label">Students reached</span></div>
+            <div class="stat tilt" data-tilt="10" data-reveal style="--i: 2"><span class="stat__num gradient-text" data-count="600" data-suffix="+">0</span><span class="stat__label">Seminars conducted</span></div>
+            <div class="stat tilt" data-tilt="10" data-reveal style="--i: 3"><span class="stat__num gradient-text" data-count="40" data-suffix="+">0</span><span class="stat__label">Cities</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ENROLL FORM -->
+      <section class="section" id="enroll" style="padding-top: 0" aria-labelledby="enroll-title">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <span class="kicker">School enrollment</span>
+            <h2 class="section__title" id="enroll-title">Enroll your school with <span class="gradient-text">PrepWays</span></h2>
+            <p class="section__lead">Fill in the details below. Our partnerships team will get in touch within two working days.</p>
+          </div>
+          <form class="form-card" data-form data-success="Thank you, {name}! Our partnerships team will contact you shortly." novalidate data-reveal style="max-width: 920px; margin-inline: auto">
+            <div class="form-grid">
+              <div class="field field--full">
+                <label for="s-school">School name <span class="req" aria-hidden="true">*</span></label>
+                <input id="s-school" name="school" type="text" autocomplete="organization" required minlength="3" aria-describedby="s-school-err" />
+                <span class="field-error" id="s-school-err"></span>
+              </div>
+              <div class="field field--full">
+                <label for="s-plan">Plan <span class="req" aria-hidden="true">*</span></label>
+                <select id="s-plan" name="plan" required aria-describedby="s-plan-err">
+                  <option value="">Select…</option>
+                  <option value="trial">School Management Tool: ₹99 for 7 days, then ₹7,000 / year</option>
+                  <option value="partnership">Programs only (seminars, foundation batches): custom quote</option>
+                </select>
+                <span class="field-error" id="s-plan-err"></span>
+              </div>
+              <div class="field">
+                <label for="s-board">Board <span class="req" aria-hidden="true">*</span></label>
+                <select id="s-board" name="board" required aria-describedby="s-board-err">
+                  <option value="">Select…</option>
+                  <option>CBSE</option>
+                  <option>ICSE / ISC</option>
+                  <option>State Board</option>
+                  <option>IB</option>
+                  <option>Cambridge (IGCSE)</option>
+                </select>
+                <span class="field-error" id="s-board-err"></span>
+              </div>
+              <div class="field">
+                <label for="s-size">Number of students <span class="req" aria-hidden="true">*</span></label>
+                <select id="s-size" name="size" required aria-describedby="s-size-err">
+                  <option value="">Select…</option>
+                  <option>Under 500</option>
+                  <option>500 – 1,000</option>
+                  <option>1,000 – 2,500</option>
+                  <option>2,500+</option>
+                </select>
+                <span class="field-error" id="s-size-err"></span>
+              </div>
+              <div class="field">
+                <label for="s-city">City <span class="req" aria-hidden="true">*</span></label>
+                <input id="s-city" name="city" type="text" autocomplete="address-level2" required aria-describedby="s-city-err" />
+                <span class="field-error" id="s-city-err"></span>
+              </div>
+              <div class="field">
+                <label for="s-state">State <span class="req" aria-hidden="true">*</span></label>
+                <input id="s-state" name="state" type="text" autocomplete="address-level1" required aria-describedby="s-state-err" />
+                <span class="field-error" id="s-state-err"></span>
+              </div>
+              <div class="field">
+                <label for="s-name">Contact person <span class="req" aria-hidden="true">*</span></label>
+                <input id="s-name" name="name" type="text" autocomplete="name" required minlength="2" aria-describedby="s-name-err" />
+                <span class="field-error" id="s-name-err"></span>
+              </div>
+              <div class="field">
+                <label for="s-role">Designation</label>
+                <input id="s-role" name="role" type="text" autocomplete="organization-title" placeholder="e.g. Principal" aria-describedby="s-role-err" />
+                <span class="field-error" id="s-role-err"></span>
+              </div>
+              <div class="field">
+                <label for="s-email">Official email <span class="req" aria-hidden="true">*</span></label>
+                <input id="s-email" name="email" type="email" autocomplete="email" required aria-describedby="s-email-err" />
+                <span class="field-error" id="s-email-err"></span>
+              </div>
+              <div class="field">
+                <label for="s-phone">Phone <span class="req" aria-hidden="true">*</span></label>
+                <input id="s-phone" name="phone" type="tel" autocomplete="tel" inputmode="numeric" required pattern="[6-9][0-9]{9}" data-pattern-msg="Enter a valid 10-digit mobile number." aria-describedby="s-phone-err" />
+                <span class="field-error" id="s-phone-err"></span>
+              </div>
+              <fieldset class="field field--full" data-required-group>
+                <legend>Programs you're interested in <span class="req" aria-hidden="true">*</span></legend>
+                <div class="checks">
+                  <label class="check"><input type="checkbox" name="services" value="seminars" /><span>Career seminars</span></label>
+                  <label class="check"><input type="checkbox" name="services" value="foundation" /><span>JEE/NEET foundation</span></label>
+                  <label class="check"><input type="checkbox" name="services" value="dashboard" /><span>Performance dashboard</span></label>
+                  <label class="check"><input type="checkbox" name="services" value="teachers" /><span>Teacher workshops</span></label>
+                  <label class="check"><input type="checkbox" name="services" value="parents" /><span>Parent sessions</span></label>
+                  <label class="check"><input type="checkbox" name="services" value="scholarship" /><span>Talent tests</span></label>
+                </div>
+                <span class="field-error" aria-live="polite"></span>
+              </fieldset>
+              <div class="field field--full">
+                <label for="s-msg">Anything else we should know?</label>
+                <textarea id="s-msg" name="message" aria-describedby="s-msg-err"></textarea>
+                <span class="field-error" id="s-msg-err"></span>
+              </div>
+            </div>
+            <button class="btn btn--primary btn--block" type="submit" style="margin-top: 8px">
+              Submit enrollment
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+            </button>
+            <p class="form-note">By submitting, you agree to be contacted by PrepWays about school partnerships and accept our <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy Policy</a>.</p>
+          </form>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section" style="padding-top: 0" aria-labelledby="school-faq-title">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <span class="kicker">FAQ</span>
+            <h2 class="section__title" id="school-faq-title">For school <span class="gradient-text">leaders</span></h2>
+          </div>
+          <div class="faq">
+            <details data-reveal style="--i: 0">
+              <summary>Is there a minimum school size to partner?</summary>
+              <div class="faq__body">No. We work with schools of every size and tailor programs to your student strength and budget.</div>
+            </details>
+            <details data-reveal style="--i: 1">
+              <summary>Will foundation batches disturb the regular timetable?</summary>
+              <div class="faq__body">No. Batches are planned around your timetable — as zero periods, after-school sessions or weekend classes.</div>
+            </details>
+            <details data-reveal style="--i: 2">
+              <summary>How does the ₹99 trial work?</summary>
+              <div class="faq__body">You pay ₹99 and set up AutoPay to use the full school management tool for 7 days. We remind you at least 24 hours before the trial ends. If you don't cancel, ₹7,000 is charged automatically for the next 12 months.</div>
+            </details>
+            <details data-reveal style="--i: 3">
+              <summary>How do we cancel AutoPay?</summary>
+              <div class="faq__body">Cancel from your UPI app's AutoPay section or your card's mandate settings, or email prepways23@gmail.com. Cancel before the trial ends to avoid the ₹7,000 charge. Payments already made are non-refundable, as per our Terms.</div>
+            </details>
+            <details data-reveal style="--i: 4">
+              <summary>Can we start with only a seminar?</summary>
+              <div class="faq__body">Yes. Many schools begin with a career counselling seminar and expand to foundation programs and dashboards later.</div>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <a class="brand" href="index.html" aria-label="PrepWays home">
+              <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="pw-logo-2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6" /><stop offset=".55" stop-color="#5b6cf2" /><stop offset="1" stop-color="#14c3b0" /></linearGradient></defs><rect width="64" height="64" rx="14" fill="url(#pw-logo-2)" /><path class="logo__star" d="M32 7.5c1.1 5.6 2.9 7.4 8.5 8.5-5.6 1.1-7.4 2.9-8.5 8.5-1.1-5.6-2.9-7.4-8.5-8.5 5.6-1.1 7.4-2.9 8.5-8.5Z" fill="#fcd34d" /><path d="M30.8 28.2C25.6 25.6 19.4 25 13 26v23.2c6.4-1 12.6-.4 17.8 2.2Z" fill="#fff" /><path d="M33.2 28.2c5.2-2.6 11.4-3.2 17.8-2.2v23.2c-6.4-1-12.6-.4-17.8 2.2Z" fill="#eef2ff" /></svg></span>
+              <span>Prep<b>Ways</b></span>
+            </a>
+            <p>Counselling and guidance for JEE &amp; NEET students by IIT alumni and MBBS students — and partnerships that help schools grow.</p>
+          </div>
+          <div>
+            <h4>Programs</h4>
+            <ul>
+              <li><a href="https://mentor.prepways.in/">Mentorship + Counselling</a></li>
+              <li><a href="https://school.prepways.in/">School Management</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li><a href="index.html#what-we-do">What we do</a></li>
+              <li><a href="https://school.prepways.in/">Partner with us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Reach us</h4>
+            <ul>
+              <li><a href="mailto:prepways23@gmail.com">prepways23@gmail.com</a></li>
+              <li>+91 00000 00000</li>
+              <li>Mon–Sat, 9am – 8pm</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>© <span data-year>2026</span> PrepWays. All rights reserved.</span>
+          <nav class="footer__legal" aria-label="Legal">
+            <a href="terms.html">Terms &amp; Conditions</a>
+            <a href="privacy.html">Privacy Policy</a>
+          </nav>
+          <button class="btn btn--sm footer__install" type="button" data-install hidden>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5" /><path d="M5 21h14" /></svg>
+            Install app
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <button class="icon-btn to-top" type="button" aria-label="Back to top">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+    </button>
+  </body>
+</html>
